@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-const True bool = true
+func lenAndUpper(name string) (int, string) {
+	return len(name), strings.ToUpper(name)
+}
 
 func main() {
-	name := "como"
-	fmt.Println(name)
+	totalLength, upperName := lenAndUpper("como")
+	fmt.Println(totalLength, upperName)
 }
 
 // fmt is package for formatting
@@ -16,3 +21,5 @@ func main() {
 // when creating variable, you need to tell type
 
 // when within func, you can create variable like {varaible_name} := {variable}
+
+// when making function, you need to tell Go what types the argument and result will be
