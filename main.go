@@ -1,19 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func lenAndUpper(name string) (length int, uppercase string) {
-	length = len(name)
-	uppercase = strings.ToUpper(name)
-	return
+func superAdd(numbers ...int) int {
+	for index, number := range numbers {
+		fmt.Println(index, number)
+	}
+	return 1
 }
 
 func main() {
-	totalLength, upperCase := lenAndUpper("nicolas")
-	fmt.Println(totalLength, upperCase)
+	superAdd(1, 2, 3, 4, 5, 6)
 }
 
 // fmt is package for formatting
@@ -29,3 +26,7 @@ func main() {
 // Go can return multiple values from a single function
 
 // If you want only one value out of multiple value function, use _ <= this is ignore value
+
+// defer executes after func is done
+
+// for is the only way to loop in GO
