@@ -1,17 +1,13 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func lenAndUpper(name string) (int, string) {
-	return len(name), strings.ToUpper(name)
+func repeatMe(words ...string) {
+	fmt.Println(words)
 }
 
 func main() {
-	totalLength, upperName := lenAndUpper("como")
-	fmt.Println(totalLength, upperName)
+	repeatMe("nico", "lynn", "dal", "mari", "como")
 }
 
 // fmt is package for formatting
@@ -23,3 +19,7 @@ func main() {
 // when within func, you can create variable like {varaible_name} := {variable}
 
 // when making function, you need to tell Go what types the argument and result will be
+
+// Go can return multiple values from a single function
+
+// If you want only one value out of multiple value function, use _ <= this is ignore value
