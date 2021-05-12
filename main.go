@@ -3,14 +3,17 @@ package main
 import "fmt"
 
 func canIDrink(age int) bool {
-	if age < 18 {
+	switch age {
+	case 10:
 		return false
+	case 18:
+		return true
 	}
-	return true
+	return false
 }
 
 func main() {
-	fmt.Println(canIDrink(16))
+	fmt.Println(canIDrink(18))
 }
 
 // fmt is package for formatting
@@ -30,3 +33,7 @@ func main() {
 // defer executes after func is done
 
 // for is the only way to loop in GO
+
+// with GO, you can create variable creation in if statement (Variable Expression)
+
+// switch can be used to avoid too much if else
