@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-func superAdd(numbers ...int) int {
-	for index, number := range numbers {
-		fmt.Println(index, number)
+func canIDrink(age int) bool {
+	if age < 18 {
+		return false
 	}
-	return 1
+	return true
 }
 
 func main() {
-	superAdd(1, 2, 3, 4, 5, 6)
+	fmt.Println(canIDrink(16))
 }
 
 // fmt is package for formatting
