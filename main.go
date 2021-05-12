@@ -2,18 +2,11 @@ package main
 
 import "fmt"
 
-func canIDrink(age int) bool {
-	switch age {
-	case 10:
-		return false
-	case 18:
-		return true
-	}
-	return false
-}
-
 func main() {
-	fmt.Println(canIDrink(18))
+	a := 2
+	b := &a
+	*b = 20
+	fmt.Println(a, b)
 }
 
 // fmt is package for formatting
@@ -37,3 +30,5 @@ func main() {
 // with GO, you can create variable creation in if statement (Variable Expression)
 
 // switch can be used to avoid too much if else
+
+// adding & shows memory location * see through of memory
