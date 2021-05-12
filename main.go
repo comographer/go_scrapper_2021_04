@@ -3,10 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	a := 2
-	b := &a
-	*b = 20
-	fmt.Println(a, b)
+	names := []string{"nico", "lynn", "dal"}
+	names = append(names, "flynn")
+	fmt.Println(names)
 }
 
 // fmt is package for formatting
