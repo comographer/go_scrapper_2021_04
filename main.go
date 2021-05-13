@@ -1,7 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/comographer/go_scrapper_2021_04/accounts"
+)
+
 func main() {
-	account := banking.Account{owner: "como", balance: 10000}
+	account := accounts.NewAccount("nico")
+	fmt.Println(account)
 }
 
 // fmt is package for formatting
